@@ -1,0 +1,71 @@
+/*
+ *	STYLESHEET:
+ *	gMap.css
+ *
+ *	PURPOSE:
+ *	Primary stylesheet for example page of the CFGMap Custom Tag
+ *
+ *	AUTHOR:
+ *	Stephen G 'Cutter' Blades, Jr cutterDOTblATcutterscrossing.com
+ */
+ 
+#mapContainer {
+	text-align: left;
+	margin: 0 auto;
+}
+
+#mapTitle {
+	width: auto;
+	padding: 6px 0px 8px 8px;
+	color: #FE6B5F;
+	font-size: 14px;
+}
+#mapBlurb {
+	margin: 0 auto;
+	padding: 0px 0px 8px 8px;
+}
+#printLink {
+	float: right;
+	margin: 8px auto;
+}
+#printLink select{
+	margin-right: 28px;
+}
+
+#googlemapstag {
+	margin-right: 10px;
+	float:right;
+	border: solid #000000 1px;
+}
+#frmContainer {
+	height: 425;
+	text-align: left;
+	color: black;
+	margin: 0 auto;
+	width: 158px;
+	float:left;
+}
+#locList {
+	margin: 0 10px;
+}
+
+#frmDiv {
+	margin-left: 8px;
+}
+
+#dirDiv {
+	margin: 8px 0 8px 160px;
+	color: black;
+}
+
+#dirDiv *{
+	color: black;	
+}
+.clsDir {
+	background-color: white;
+	color: black;
+}
+
+.infoAddr {
+	color: #000;
+}

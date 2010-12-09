@@ -1,0 +1,39 @@
+/*
+ *	STYLESHEET:
+ *	gMapPrint.css
+ *
+ *	PURPOSE:
+ *	Print stylesheet for example page of the CFGMap Custom Tag
+ *
+ *	AUTHOR:
+ *	Stephen G 'Cutter' Blades, Jr cutterDOTblATcutterscrossing.com
+ */
+ 
+body {
+	background-color: white;
+	color: black;
+	text-align: center;
+}
+
+#mapContainer {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#printLink, #mapTitle, #frmContainer {
+	display: none;
+}
+
+#frmContainer {
+	display: none;
+}
+
+#dirDiv {
+	width: 100%;
+	margin: 0;
+}
+
+#googlemapstag {
+	width: 100%;
+	margin: 0;
+}

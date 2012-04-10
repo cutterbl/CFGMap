@@ -116,7 +116,14 @@
 		<div id="content">
 		<p class="intro">
 		<img src="/images/cfgmap-banner-535x160.png" alt="CFQueryReader Logo" style="width:535px;height:160px;border:0;" /><br /><br />
-		<a href="https://github.com/cutterbl/CFGMap" target="_blank">CFGMap</a> is a ColdFusion Custom Tag, designed for implementing the <a href="http://cutterscrossing.com/index.cfm/cfgmap" target="_blank">Google Maps Javascript API</a> for map display. With only a few attributes (oulined in the comments of the custom tag), a developer can quickly and easily render multiple locations with Google Maps. With a little scripting, a developer can also perform basic functions, like asking for directions or showing quick routes from various locations. There is even the ability to define a callback method, once all locations are geocoded, to pass the location data back to your server for archive. The below example (inluded in the <a href="" target="_blank">download</a>) shows you CFGMap in action.</p>
+		<ul>
+			<li><b>Project:</b> - <a href="https://github.com/cutterbl/CFGMap" target="_blank">CFGMap</a></li>
+			<li><b>Author:</b> - <a href="http://www.cutterscrossing.com">Steve 'Cutter' Blades</a></li>
+			<li><b>Version:</b> - 0.9</li>
+			<li><b>Revised:</b> - 10 April, 2012</li>
+			<li><b>Tags:</b> - <a href="http://www.adobe.com/products/coldfusion" target="_blank">ColdFusion</a>, <a href="https://developers.google.com/maps/documentation/javascript/" target="_blank">Google Maps</a>, JavaScript, Development</li>
+		</ul><br />
+		<a href="https://github.com/cutterbl/CFGMap" target="_blank">CFGMap</a> is a ColdFusion Custom Tag, designed for implementing the <a href="https://developers.google.com/maps/documentation/javascript/" target="_blank">Google Maps Javascript API</a> for map display. With only a few attributes (oulined in the comments of the custom tag), a developer can quickly and easily render multiple locations with Google Maps. With a little scripting, a developer can also perform basic functions, like asking for directions or showing quick routes from various locations. There is even the ability to define a callback method, once all locations are geocoded, to pass the location data back to your server for archive. The below example (inluded in the <a href="" target="_blank">download</a>) shows you CFGMap in action.</p>
 		<div id="mapContainer">
 			<div id="printLink">
 				<cfif ArrayLen(REQUEST.locArr) gt 1><!--- For sites with more than one mapped location --->

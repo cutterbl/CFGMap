@@ -100,12 +100,23 @@
 </cfscript>
 
 <cfoutput>
+<!doctype html>
 <html>
 	<head>
-		<title>Google Maps JavaScript API v3 - CFGMap Custom Tag</title>
+		<meta charset="UTF-8" />
+		<title>CFGMap Custom Tag - ColdFusion + Google Maps JavaScript API v3</title>
+		<meta name="keywords" content="ColdFusion,Google Maps,Javascript,CFGMap" />
+		<meta name="description" content="CFGMap is a ColdFusion custom tag for rendering Google Maps via it's v3 JavaScript API." />
+		<meta name="author" content="Steve 'Cutter' Blades" />
+		<meta name="copyright" content="(c)2010 - 2012 Stephen Blades" />
 		<script type='text/javascript' src='/scripts/jquery-1.4.4.min.js'></script>
+		<link rel="shortcut icon" href="/favicon_32x32.ico" />
 	</head>
 	<body>
+		<div id="content">
+		<p class="intro">
+		<img src="/images/cfgmap-banner-535x160.png" alt="CFQueryReader Logo" style="width:535px;height:160px;border:0;" /><br /><br />
+		<a href="https://github.com/cutterbl/CFGMap" target="_blank">CFGMap</a> is a ColdFusion Custom Tag, designed for implementing the <a href="http://cutterscrossing.com/index.cfm/cfgmap" target="_blank">Google Maps Javascript API</a> for map display. With only a few attributes (oulined in the comments of the custom tag), a developer can quickly and easily render multiple locations with Google Maps. With a little scripting, a developer can also perform basic functions, like asking for directions or showing quick routes from various locations. There is even the ability to define a callback method, once all locations are geocoded, to pass the location data back to your server for archive. The below example (inluded in the <a href="" target="_blank">download</a>) shows you CFGMap in action.</p>
 		<div id="mapContainer">
 			<div id="printLink">
 				<cfif ArrayLen(REQUEST.locArr) gt 1><!--- For sites with more than one mapped location --->
@@ -216,6 +227,7 @@
 			<br clear="all" />
 			<!--- And the Directions container --->
 			<div id="dirDiv"></div>
+		</div>
 		</div>
 	</body>
 </html>

@@ -45,7 +45,7 @@
 			<cfloop array="#LOCAL.set#" index="LOCAL.i">
 				<cfset LOCAL.try = setGMapLatLng(argumentCollection:LOCAL.i) />
 				<cfif not LOCAL.try.success>
-					<cfthrow type="Custom_DS" errorcode="LOCAL.i.locId" detail="#LOCAL.try.message#" />
+					<cfthrow type="Custom_DS" errorcode="LOCAL.i.locId" message="#LOCAL.try.message#" />
 				</cfif>
 			</cfloop>
 			<cfcatch type="any">

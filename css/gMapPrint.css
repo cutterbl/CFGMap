@@ -37,3 +37,15 @@ body {
 	width: 100%;
 	margin: 0;
 }
+
+p.intro {
+	display:none;
+}
+
+body {
+	background: none;
+}
+
+div#content {
+	max-width: 100%;
+}

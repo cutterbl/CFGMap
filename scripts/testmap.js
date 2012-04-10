@@ -20,9 +20,15 @@
 
 // This is our callback function to correct lat/lng for locations that didn't have the info in the db
 var correctLocation = function(corrArr){
+	/*
+	 * Uncomment this ajax call to send geocoded lat lng info back to the server for processing
 	$.ajax({
-		data: {corrArr: JSONString(corrArr)},
-		url:"/cfc/Locations.cfc?method=correctLocsLatLng&returnFormat=JSON",
+		data: {
+			corrArr: JSONString(corrArr),
+			method: 'correctLocsLatLng',
+			returnFormat: 'json'
+		},
+		url:"/cfc/Locations.cfc",
 		error: function(req,status,error){
 			//console.log("error: ",arguments);
 		},
@@ -31,10 +37,11 @@ var correctLocation = function(corrArr){
 			if(ret.success){
 				_cfGMapObj.clearDirtyLocs();
 			} else {
-				alert("There was an issue updating the locations on the server");
+				var message = (ret.message !== undefined)?ret.message:"There was an issue updating the locations on the server";
+				alert(message);
 			}
 		}
-	});
+	});*/
 };
 
 // Get Directions from a point to the currentLoc
